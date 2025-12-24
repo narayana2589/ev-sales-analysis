@@ -1,15 +1,20 @@
-# EV Sales Analysis Project
+## Project Workflow
 
-This project analyzes Indian EV sales data using Excel and SQL.
+Raw Data (CSV)  
+→ Python ETL (Cleaning & Transformation)  
+→ MySQL (SQL Analysis)  
+→ Excel (Reporting)  
+→ Power BI (Dashboard)
 
-## Tools Used
-- Microsoft Excel: Data cleaning, KPI analysis, dashboards
-- MySQL: Data validation, filtering, aggregations, joins
+## Data Pipeline & Automation
 
-## Project Structure
-- data/: Raw dataset
-- excel/: Excel analysis and dashboards
-- sql/: Modular SQL queries
+A Python-based ETL pipeline was developed to automate data cleaning
+and loading processes.
 
-## Future Enhancements
-- Power BI dashboard for interactive visualization
+### Key Features
+- Column standardization and data type validation
+- Duplicate removal and null handling
+- Full refresh load into MySQL database
+- Export of cleaned data for Excel analysis
+- Reusable pipeline design suitable for scheduled execution
+
